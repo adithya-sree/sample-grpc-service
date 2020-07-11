@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+service Sample {
+    rpc Running (RunningRequest) returns (RunningResponse);
+}
+
+message RunningResponse {
+    bool running = 1;
+}
+
+message RunningRequest {
+}
